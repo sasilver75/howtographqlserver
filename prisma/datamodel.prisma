@@ -1,0 +1,12 @@
+type Link {
+  id: ID! @id
+  createdAt: DateTime! @createdAt
+  description: String!
+  url: String!
+}
+
+# Note: The @id directive added to the id: ID! field! Prisma will auto-generate and store the globally unique IDs for the Link records in the database on the id field.
+
+# @createdAt directive... this field is also managed by Prisma and wlil be read-only in the API. It stores the time for when a specific Link was created.
+
+
